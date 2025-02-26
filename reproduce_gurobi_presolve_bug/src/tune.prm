@@ -1,0 +1,12 @@
+#Cuts 3
+#StrongCGCuts 1
+#BranchDir 1
+RINS 0
+MIPFocus 3
+#Method 2
+VarBranch 2
+#Heuristics 0
+#Cuts 1
+#IntegralityFocus 1
+#PoolSolutions  2000000000
+#PoolSearchMode  2

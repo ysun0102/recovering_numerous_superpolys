@@ -1,0 +1,76 @@
+        0.00 - recover start
+		 v0 v1 v2 v4 v6 v8 v10 v11 v12 v13 v15 v17 v19 v21 v23 v25 v26 v28 v29 v30 v31 v32 v34 v36 v38 v40 v43 v45 v47 v49 v51 v53 v54 v55 v58 v60 v62 v64 v66 v67 v69 v71 v73 v75 v77 v79
+
+66 52 65 58 66 47 
+Task id: 328
+bound: 66
+setroot: 1
+vcube: 46
+Set parameter RINS to value 0
+Set parameter VarBranch to value 2
+Set parameter MIPFocus to value 3
+Set parameter Threads to value 64
+Set parameter MIPGap to value 1e+100
+Set parameter PoolSearchMode to value 2
+Set parameter PoolSolutions to value 2000000000
+Set parameter SoftMemLimit to value 220
+Set parameter TimeLimit to value 9000
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.4 LTS")
+
+CPU model: AMD EPYC 7763 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 256 logical processors, using up to 64 threads
+
+Optimize a model with 7128 rows, 5928 columns and 37243 nonzeros
+Model fingerprint: 0x2a2236d3
+Variable types: 0 continuous, 5928 integer (5928 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Using branch priorities.
+Presolve removed 5477 rows and 4102 columns
+Presolve time: 0.03s
+Presolved: 1651 rows, 1826 columns, 9191 nonzeros
+Variable types: 0 continuous, 1826 integer (1826 binary)
+Root relaxation presolved: 1650 rows, 1825 columns, 9191 nonzeros
+
+
+Root relaxation: objective 4.500000e+01, 1362 iterations, 0.04 seconds (0.05 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   45.00000    0   40          -   45.00000      -     -    0s
+     0     0   45.00000    0  151          -   45.00000      -     -    0s
+H    0     0                      47.0000000   45.00000  4.26%     -    0s
+     0     0   45.61386    0  223   47.00000   45.61386  2.95%     -    0s
+     0     0   47.00000    0   45   47.00000   47.00000  0.00%     -    0s
+
+Optimal solution found at node 0 - now completing solution pool...
+Total elapsed time = 1.00s (DegenMoves)
+
+    Nodes    |    Current Node    |      Pool Obj. Bounds     |     Work
+             |                    |   Worst                   |
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   47.00000    0   45          -   47.00000      -     -    1s
+
+Explored 1 nodes (4083 simplex iterations) in 1.09 seconds (0.79 work units)
+Thread count was 64 (of 256 available processors)
+
+Solution count 6: 47 47 47 ... 48
+No other solutions better than 48
+
+Optimal solution found (tolerance 1.00e+100)
+Best objective 4.700000000000e+01, best bound 4.700000000000e+01, gap 0.0000%
+cptt: 1/6 -- solutions: 6
+SUPERPOLY
+1 | 1	k18 k35 k36 k50 k51 k60 k68 k72 k76 k77  0 0 0
+1 | 1	k18 k25 k35 k36 k60 k63 k68 k76 k77  0 0 0
+1 | 1	k16 k17 k25 k35 k36 k52 k53 k60 k68 k76 k77  0 0 0
+1 | 1	k16 k17 k25 k35 k36 k45 k60 k68 k76 k77  0 0 0
+1 | 1	k16 k17 k18 k25 k35 k36 k60 k68 k76 k77  0 0 0
+1 | 1	k10 k25 k54 k60 k63 k68 k76 k77  0 0 0
+
+        1.21 - recover done
