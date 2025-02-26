@@ -80,4 +80,6 @@ round 3
 + ***sp_monomial.py***: Statistics of the monomial numbers of the polynomials.
 + ***vars_frequency_832.py***: Statistics of the appearing times of the secret variables.
 
+### ./reproduce_gurobi_presolve_bug
 
++ Gurobi (ver11.0.3) may recover wrong superpolys if "presolve()" is used. Here is an example to reproduce this bug.
